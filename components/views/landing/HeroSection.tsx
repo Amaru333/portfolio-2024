@@ -49,7 +49,7 @@ const HeroSection = () => {
         >
           <motion.div className="flex justify-center items-center px-4" style={{ opacity: aboutScaleOpacity }}>
             <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400 w-[480px] h-[80px]">
-              I'm a
+              I&apos;m a
               <FlipWords words={words} />
             </div>
           </motion.div>
