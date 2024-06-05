@@ -30,4 +30,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .font-outline-2 {
+    -webkit-text-stroke: 2px rgb(249 115 22);
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px rgb(249 115 22);
+  }
 }
