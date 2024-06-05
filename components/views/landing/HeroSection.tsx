@@ -7,7 +7,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const HeroSection = () => {
-  const words = ["Web\u00a0App\u00a0Developer", "Mobile\u00a0App\u00a0Developer", "UI/UX\u00a0Designer"];
+  const words = ["web\u00a0app\u00a0developer", "mobile\u00a0app\u00a0developer", "ui\u00a0/\u00a0ux\u00a0designer"];
   const ref = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -49,7 +49,7 @@ const HeroSection = () => {
         >
           <motion.div className="flex justify-center items-center px-4" style={{ opacity: aboutScaleOpacity }}>
             <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400 w-[480px] h-[80px]">
-              I&apos;m a
+              i&apos;m a
               <FlipWords words={words} />
             </div>
           </motion.div>
