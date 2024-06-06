@@ -12,12 +12,12 @@ const HeroSection = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end end"],
+    offset: ["0vh", "200vh"],
   });
 
   const { scrollYProgress: aboutScroll } = useScroll({
     target: aboutRef,
-    offset: ["start start", "end end"],
+    offset: ["0vh", "200vh"],
   });
 
   const scaleProgress = useTransform(scrollYProgress, [0.1, 0.5], [1, 200]);
