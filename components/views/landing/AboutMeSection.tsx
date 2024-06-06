@@ -65,13 +65,15 @@ const AboutMeSection = () => {
           </motion.h1>
           <div className="flex flex-col gap-x-12 mt-28 font-mono">
             <div className="flex">
-              <div className="mt-4 pr-12">
+              <div className="mt-4 pr-12 max-w-screen-sm">
                 <p className="text-xl">
                   bachelor of engineering in <span className="text-orange-500">information science</span>
                 </p>
-                <p>
+                <p className="text-xs mb-2">
                   visvesvaraya technological university, <span className="text-orange-500">bangalore (IN)</span>
                 </p>
+                <p>- published & presented my final year project named &quot;design of hierarchical data aggregation for internet of underwater things&quot; as a paper in ICGCCP-2021</p>
+                <p>- gave a technical paper presentation on the topic &quot;artificial intelligence in video games&quot;</p>
               </div>
               <img src="/graduate-1.svg" className="mr-20" />
             </div>
@@ -79,46 +81,48 @@ const AboutMeSection = () => {
               <div className="mr-8 mt-28">
                 <img src="/exp-1.svg" />
               </div>
-              <div>
+              <div className="max-w-screen-sm">
                 <p className="text-xl">
                   full stack <span className="text-orange-500">developer</span>
                 </p>
-                <p>
+                <p className="text-xs mb-2">
                   upGrad, <span className="text-orange-500">bangalore (IN)</span>
                 </p>
-                <p>PointPointPointPointPointPointPointPointPointPoint Point</p>
-                <p>Point</p>
-                <p>Point</p>
-                <p>Point</p>
-                <p>Point</p>
+                <p>- worked on several technologies like react, nextjs, redux, setry, moengage, etc</p>
+                <p>- developed admin panels for live classes, online tests, question banks</p>
+                <p>- revamped the test experience for users with new, better and improved ui to give a detailed insights for users after taking tests</p>
+                <p>- integrated sentry tool to the website to give an insight of the errors faced by the users and performance of the website</p>
+                <p>- integrated moengage and google analytics to get an insight of user engagement</p>
               </div>
             </div>
             <div className="flex">
-              <div>
+              <div className="max-w-screen-sm">
                 <p className="text-xl">
                   full stack <span className="text-orange-500">developer</span>
                 </p>
-                <p>
+                <p className="text-xs mb-2">
                   the wasserstoffs, <span className="text-orange-500">gurgaon (IN)</span>
                 </p>
-                <p>PointPointPointPointPointPointPointPointPointPoint Point</p>
-                <p>Point</p>
-                <p>Point</p>
-                <p>Point</p>
-                <p>Point</p>
+                <p>- worked on several technologies like react, nextjs, react native, tailwindcss, redux toolkit, nodejs, express, mongodb, and much more</p>
+                <p>- worked on blockchain technology for several web and mobile applications</p>
+                <p>- developed static and dynamic ui screens for web, android and ios applications</p>
+                <p>- developed apis for several applications including charts and data analytics</p>
+                <p>- created crypto trading / currency swapping widgets as per client&apos;s requirements</p>
               </div>
             </div>
             <div className="flex items-end">
-              <div className="mt-8 ml-8">
+              <div className="mt-8 ml-20">
                 <img src="/plane.svg" />
               </div>
-              <div className="ml-8">
+              <div className="ml-8 max-w-screen-sm">
                 <p className="text-xl">
                   masters of science in <span className="text-orange-500">information technology</span>
                 </p>
-                <p>
+                <p className="text-xs mb-2">
                   university of north carolina at charlotte, <span className="text-orange-500">charlotte (US)</span>
                 </p>
+                <p>- expected to graduate by spring 2025</p>
+                <p>- completed several courses like network based application development, software system design and implementaion, applied database, etc</p>
               </div>
             </div>
           </div>
