@@ -1,10 +1,16 @@
 import { SparklesCore } from "@/components/ui/sparkles";
-import { motion } from "framer-motion";
-import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
 
 const JourneySection = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["450vh", "600vh"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [1, 25]);
   return (
-    <div className="h-[200vh] relative">
+    <div className="h-[400vh] relative">
       <div className="w-full h-full absolute inset-0">
         <SparklesCore id="tsparticlesfullpage" background="transparent" minSize={0.6} maxSize={1.4} particleDensity={100} className="w-full h-full" particleColor="#FFFFFF" />
       </div>
@@ -13,8 +19,8 @@ const JourneySection = () => {
           initial={{ opacity: 0.5, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.3,
-            duration: 0.8,
+            delay: 0.2,
+            duration: 0.5,
             ease: "easeInOut",
           }}
           className="mt-8 text-8xl font-extrabold font-outline-2-white text-transparent flex items-end justify-center"
@@ -26,8 +32,8 @@ const JourneySection = () => {
             initial={{ opacity: 0.1, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.8,
+              delay: 0.2,
+              duration: 0.5,
               ease: "easeInOut",
             }}
             className="flex"
@@ -48,8 +54,8 @@ const JourneySection = () => {
             initial={{ opacity: 0.1, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.8,
+              delay: 0.2,
+              duration: 0.5,
               ease: "easeInOut",
             }}
             className="flex mt-8 justify-end"
@@ -75,8 +81,8 @@ const JourneySection = () => {
             initial={{ opacity: 0.1, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.8,
+              delay: 0.2,
+              duration: 0.5,
               ease: "easeInOut",
             }}
             className="flex"
@@ -99,8 +105,8 @@ const JourneySection = () => {
             initial={{ opacity: 0.1, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.3,
-              duration: 0.8,
+              delay: 0.2,
+              duration: 0.5,
               ease: "easeInOut",
             }}
             className="flex items-end"
@@ -120,6 +126,9 @@ const JourneySection = () => {
             </div>
           </motion.div>
         </div>
+      </div>
+      <div className="z-30 sticky top-0 h-screen flex items-center justify-center overflow-hidden">
+        <motion.img src="/earth-2.svg" style={{ scale: scaleProgress }} />
       </div>
     </div>
   );
